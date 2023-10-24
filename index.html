@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPaginaLibros</title>
+    <!--Conexión con CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Conexion con Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Conexión Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Icono en pestaña -->
+    <link rel="icon" href="img/icon1.png">
+</head>
+<body>
+    <!--Navegador-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <span class="text-primary">Book</span>
+                <img src="img/icon2.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Friend
+            </a>
+            <!--Responsiva de la página-->
+            <!--Botón hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start" aria-controls="navbar-start" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del navegador-->
+            <div class="collapse navbar-collapse" id="navbar-start">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Catalogo">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carrusel-->
+    <div id="carouselE1" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+            </button>
+            <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="1"
+                    aria-label="Slide 2">
+            </button>
+            <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="2"
+                    aria-label="Slide 3">
+            </button>
+        </div>
+
+        <!--Contenido del carrusel-->
+        <div class="carousel-inner">
+            <!--Primer cuadro-->
+            <div class="carousel-item active">
+                <img src="img/world_book1.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <p><a href="" class="btn btn-outline-dark mt-3">Leer Más</a></p>
+                </div>
+            </div>
+
+            <!--Segundo cuadro-->
+            <div class="carousel-item">
+                <img src="img/book2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <p><a href="" class="btn btn-outline-dark mt-3">Leer Más</a></p>
+                </div>
+            </div>
+
+            <!--Tercer cuadro-->
+            <div class="carousel-item">
+                <img src="img/book-day3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <p><a href="" class="btn btn-outline-light mt-3">Leer Más</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Crea botones de flecha-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselE1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselE1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Servicios-->
+    <section class="services" id="Servicios">
+        <div class="container">
+            <div class="row">
+                <!--Responsiva - "pantallaPequeña  pantallaMediana  pantallaEscritorio  margin"-->
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-car1 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Club de lectura</h3>
+                            <p>
+                                Únete a un club en línea para descubrir, analizar y disfrutar de una variedad de libros emocionantes, mientras 
+                                conectas con otros amantes de la literatura en una comunidad virtual de intercambio de ideas. 
+                                <br> Sumérgete en las historias y profundiza tu amor por la lectura a través de nuestras conversaciones 
+                                mensuales en línea. ¡Te invitamos a unirte a esta experiencia literaria enriquecedora!"
+                            </p>
+                            <button class="btn bg-info text-dark">Leer Más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-car2 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Foro en línea</h3>
+                            <p>
+                                Nuestro foro en línea es el punto de encuentro virtual para amantes de la literatura. Únete a esta comunidad 
+                                apasionada de lectores para compartir tus pensamientos, descubrir nuevas lecturas, participar en debates enriquecedores 
+                                y conectarte con personas que comparten tu devoción por los libros. <br> Sumérgete en un mundo de historias y palabras, 
+                                donde cada página es una puerta a infinitas conversaciones."
+                            </p>
+                            <button class="btn bg-info text-dark">Leer Más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-car3 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Intercambio literario</h3>
+                            <p>
+                                Es un espacio virtual donde los Bibliófilos se reúnen para compartir sus propias creaciones, explorar las obras de otros 
+                                y establecer conexiones significativas a través de la palabra escrita. Aquí encontrarás un ambiente acogedor para nutrir 
+                                tu pasión por las letras. <br> Únete para descubrir y celebrar la diversidad de voces literarias en nuestra comunidad en línea."
+                            </p>
+                            <button class="btn bg-info text-dark">Leer Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Iconos de los servicios-->
+    <section class="section-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4 box-icons">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-airplane"></i>
+                        <div class="ms-4">
+                            <h3>Envío Gratis</h3>
+                            <p>
+                                Con cada compra, te ofrecemos la comodidad de recibir tus libros directamente en tu puerta, sin costo adicional.
+                                Descubre la maravillosa experiencia de recibir tus libros favoritos sin salir de casa, y abre las páginas de un 
+                                nuevo capítulo en tu vida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 box-icons">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-cash-coin"></i>
+                        <div class="ms-4">
+                            <h3>Rembolso</h3>
+                            <p>
+                                Queremos que tu experiencia de compra de libros sea sin riesgos y que cada título que 
+                                elijas sea un verdadero placer de leer. Compra con confianza y descubre el mundo de la 
+                                literatura sin preocupaciones con nuestra garantía de reembolsos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 box-icons">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-gift-fill"></i>
+                        <div class="ms-4">
+                            <h3>Regalos</h3>
+                            <p>
+                                Cada artículo es una expresión de amor por la literatura y una forma de celebrar la 
+                                pasión por las historias. Descubre detalles encantadores que hacen que la lectura sea 
+                                aún más especial y comparte el regalo perfecto con los que valoran las palabras y las historias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Catálogo-->
+    <section class="product" id="Catalogo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Catálogo</h2>
+                        <p>
+                            Descubre un mundo de conocimiento y aventuras literarias en nuestro catálogo de BookFriend.
+                            <br>Tu próxima gran lectura está a solo un clic de distancia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Producto 1-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Valientemente</h5>
+                            <p class="text-center">
+                                Maggie Stiefvater
+                            </p>
+                            <a href="https://www.gandhi.com.mx/valientemente-1" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 2-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb2.jfif" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ortiga y hueso</h5>
+                            <p class="text-center">
+                                T. Kingfisher
+                            </p>
+                            <a href="https://www.gandhi.com.mx/ortiga-y-hueso-1" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 3-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb3.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">La prisionera húngara</h5>
+                            <p class="text-center">
+                                Susana Wein
+                            </p>
+                            <a href="https://www.gandhi.com.mx/la-prisionera-hungara-1" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 4-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb4.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">El Retrato de casada</h5>
+                            <p class="text-center">
+                                Maggie O'Farrell
+                            </p>
+                            <a href="https://www.gandhi.com.mx/el-retrato-de-casada-1" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 5-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb5.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Las hijas del carnicero</h5>
+                            <p class="text-center">
+                                Yaniv Iczkovits
+                            </p>
+                            <a href="https://www.gandhi.com.mx/las-hijas-del-carnicero" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 6-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb6.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Venus triste</h5>
+                            <p class="text-center">
+                                Ana Romero
+                            </p>
+                            <a href="https://www.gandhi.com.mx/venus-triste" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 7-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb7.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">A la vida, ganas;<br>a los sueños, alas</h5>
+                            <p class="text-center">
+                                Alejandro Ordóñez
+                            </p>
+                            <a href="https://www.gandhi.com.mx/a-la-vida-ganas-a-los-sue-os-alas" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Producto 8-->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/lb8.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Una vida de mandalas</h5>
+                            <p class="text-center">
+                                Daniela Hoyos Falco
+                            </p>
+                            <a href="https://www.gandhi.com.mx/una-vida-de-mandalas-1" target="_blank" class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto">Saber Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Banner-->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Los mejores tesoros literarios, todos en un solo lugar</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Nulla ab laboriosam cupiditate autem. Tempore, reiciendis assumenda nesciunt sequi 
+                        is odit ullam.
+                    </p>
+                    <div>
+                        <img src="img/world_book2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section class="contact" id="Contacto">
+        <div class="container mb-3 mb-lg-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="secction-header text-center pb-2 pb-lg-5">
+                        <h2>Contacto</h2>
+                        <p>
+                            En BookFriend estamos a tu disposición para resolver tus dudas y necesidades. <br> Si tienes preguntas sobre nuestra selección de libros, 
+                            tu pedido, o cualquier otra consulta, no dudes en comunicarte con nosotros. <br> Estamos comprometidos a brindarte un servicio personalizado 
+                            y una experiencia de compra sin contratiempos. Tu satisfacción es nuestra prioridad, y estamos aquí para facilitar tu acceso al apasionante 
+                            mundo de la lectura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Formulario-->
+            <div class="d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-6 pt-4 pb-4">
+                    <form action="#" class="bg-light p-4 m-auto shadow-sm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input class="form-control" placeholder="Nombre" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input class="form-control" placeholder="Email" type="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Mensaje" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-block mt-3" type="button">Enviar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- Imagen en circulo -->
+            <div class="row">
+                <div class="text-center mb-3">
+                    <img src="img/contacto.jpg" alt="Imagen Circular" class="rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Footer-->
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <p class="text-white">Tecnolochicas Pro <br> Ingrid Serrano</p>
+        </div>
+    </footer>
+
+    <!--Conexión Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

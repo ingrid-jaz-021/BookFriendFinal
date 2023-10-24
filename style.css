@@ -1,0 +1,184 @@
+/* Importación de fuente de GoogleFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/************************************************************************
+****************************** Navegación *******************************/
+
+/* Tamaño de letra en el navegador*/
+.navbar a {
+    font-weight: 600;
+    font-size: 115%;
+}
+
+/************************************************************************
+******************************* Carrusel ********************************/
+.carousel-item {
+    min-height: 400px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+/* Título del carrusel */
+.carousel-caption h5{
+    font-size: 350%;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+/* Texto del carrusel */
+.carousel-caption p {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+/* Oscurecer las imagenes del carrusel*/
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/************************************************************************
+******************************* Servicios *******************************/
+.services {
+    background-color:#CBC0D3;
+    padding: 3% 0;
+}
+
+/* Carta 1*/
+.bg-car1 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/club_book.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Carta 2*/
+.bg-car2 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/foro_book.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Carta 3*/
+.bg-car3 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/intercambio_books.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Iconos de los servicios*/
+.section-icons {
+    background-color:#CBC0D3;
+}
+
+.box-icons i {
+    font-size: 270%;
+}
+
+.box-icons h3 {
+    font-size: 140%;
+    font-weight: 800;
+}
+
+/************************************************************************
+******************************* Catálogo ********************************/
+.product {
+    background-color:#ffcfd2;
+    padding: 3% 0;
+}
+
+/* Tamañop de cartas de los productos */
+.card img {
+    width: 60%;
+    height: 60%;
+}
+
+/************************************************************************
+******************************** Banner *********************************/
+.banner {
+    padding: 2% 0;
+    padding-bottom: 1%;
+    margin-bottom: 80px;
+}
+
+.banner img {
+    padding-bottom: 2%;
+    width: 80%;
+}
+
+/************************************************************************
+******************************* Contacto ********************************/
+.contact {
+    padding: 5% 0;
+    padding-bottom: 2% 0;
+    background-color: #e7ecef;
+}
+
+/* Imagen en circulo*/
+.rounded-circle{
+    width: 20%;
+}
+
+/* Responsivo */
+@media(max-width: 767px) {
+
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product {
+        padding: 30px 0 0 0;
+    }
+
+    .banner {
+        margin-bottom: 30px;
+    }
+}
